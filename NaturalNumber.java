@@ -3,20 +3,15 @@ public class NaturalNumber{
 	public static void main(String[] args) {
 	Scanner input = new Scanner(System.in);
 
-	int counter = 0;
-	int number;
-	int sum = 1;
 
 	System.out.print("Enter number 1 to 10: ");
-	number = input.nextInt();
+	int num = input.nextInt();
 
-	while(sum <= number) {
-	counter = counter + sum;
-	sum++;
+	int number = 10;
+	int sum = 0;
 
-	}
-	
-	System.out.printf("The sum %d", counter);
+	sum = num + num;
+	System.out.printf("The sum %d", sum);
 
 
 }
