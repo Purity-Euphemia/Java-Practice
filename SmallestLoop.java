@@ -21,9 +21,7 @@ public class SmallestLoop{
 	if(num < smallest) {
 	smallest = num;
 }
-
-	//if(num < -1) {
-	//System.out.print("wrong number");
+S
 
 
 

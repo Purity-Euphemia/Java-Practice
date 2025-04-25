@@ -1,0 +1,47 @@
+import java.util.Scanner;
+public class HighestScores{
+	public static void main(String[] args) {
+	Scanner input = new Scanner(System.in);
+
+	System.out.print("Enter a number of student: ");
+	int num = input.nextInt();
+
+	int score = 0;
+	int highest = 0;
+
+	while(count <= 0) {
+	System.out.print("Enter student name: ");
+	string name = input.nextLine();
+
+	System.out.print("Enter student name: ");
+	score = input.nextInt();
+
+	
+
+	if(name = score) {
+	highest = score;
+
+}
+	System.out.printf("The name of the student:%d',  + "name" + "score");
+
+
+
+
+
+
+}
+
+
+
+
+}
+
+
+
+
+
+}
+
+
+
+}
