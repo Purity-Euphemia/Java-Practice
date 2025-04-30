@@ -1,11 +1,14 @@
 import java.util.Scanner;
-public class Nokia3310{
+public class Nokia3310Second{
 	public static void main(String[] args) {
 	Scanner input = new Scanner(System.in);
 
 
 	System.out.println("WELCOME TO YOUR NOKIA PHONE");
+	
 
+	while(true) {
+		
 	System.out.println("LIST OF MENU FUNTIONS");
 
 
@@ -23,6 +26,7 @@ public class Nokia3310{
 	11. Clocks.
 	12. Profiles.
 	13. SIM services.
+	14. Back.
 
 	""";
 	System.out.println(MENU);
@@ -43,7 +47,8 @@ public class Nokia3310{
 	8. Options.
 	9. Speed dials.
 	10. Voice tags.
-
+	11. Back.
+	
 	""";
 	System.out.println(PhoneBook);
 	int Eight = input.nextInt();
@@ -55,7 +60,8 @@ public class Nokia3310{
 	String Options = """
 	1. Type of view.
 	2. Memory status.
-
+	3. Back.
+	
 	""";
 	System.out.println(Options);
 
@@ -75,7 +81,8 @@ public class Nokia3310{
 	8. Info service.
 	9. Voice mailbox number.
 	10.Service command editor.
-
+	11. Back.
+	
 	""";
 
 	System.out.println(Messages);
@@ -89,8 +96,10 @@ public class Nokia3310{
 
 	1. Set 1.
 	2. Common.
+	3. Back.
 	
 	""";
+	
 	System.out.println(MessageSettings);
 	int One = input.nextInt();
 
@@ -103,7 +112,8 @@ public class Nokia3310{
 	1. Message center number.
 	2. Messages sent as.
 	3. Message vaildity.
-
+	4. Back.
+	
 	""";
 	System.out.println(Set1);break;
 	
@@ -114,7 +124,7 @@ public class Nokia3310{
 	1. Delivery reports.
 	2. Reply via same centre.
 	3. character support.
-
+	5. Back.
 	""";
 	System.out.println(Common);break;
 }
@@ -133,8 +143,10 @@ public class Nokia3310{
 	6. Show call costs.
 	7. Call cost settings.
 	8. Prepaid credit.
-
+	9. Back.
+	
 	""";
+	
 	System.out.println(CallRegister);
 	int Five = input.nextInt();
 
@@ -148,8 +160,10 @@ public class Nokia3310{
 	3. Received calls'duration.
 	4. Dialled calls'duration.
 	5. Clear timers.
+	6. Back.
 	
 	""";
+	
 	System.out.println(ShowCallDuration);break;
 
 
@@ -159,6 +173,7 @@ public class Nokia3310{
 	1. Last call cost.
 	2. All call's cost.
 	3. Clear counters.
+	4. Back.
 	
 	""";
 	System.out.println(ShowCallCosts);break;
@@ -168,6 +183,7 @@ public class Nokia3310{
 
 	1. Call cost limit.
 	2. Show costs in.
+	3. Back.
 	
 	""";
 	System.out.println(CallCostSettings);break;
@@ -185,7 +201,7 @@ public class Nokia3310{
 	7. Warning and game tones.
 	8. Vibrating alert.
 	9. Screen saver.
-
+	10. Back.
 	""";
 	System.out.println(Tones);
 
@@ -270,7 +286,7 @@ public class Nokia3310{
 	case 13: System.out.println("SIM services");break;
 }
 
-
+}
 
 }
 

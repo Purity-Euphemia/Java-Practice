@@ -32,7 +32,7 @@ public class HighestScores{
 }
 	
 
-	System.out.println(name + " :is the highest with score: " + highest);
+	System.out.println(name + " is the highest with score: " + highest);
 
 
 
