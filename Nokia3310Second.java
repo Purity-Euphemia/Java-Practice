@@ -6,8 +6,7 @@ public class Nokia3310Second{
 
 	System.out.println("WELCOME TO YOUR NOKIA PHONE");
 	
-
-	while(true) {
+	while (true) {
 		
 	System.out.println("LIST OF MENU FUNTIONS");
 
@@ -26,7 +25,7 @@ public class Nokia3310Second{
 	11. Clocks.
 	12. Profiles.
 	13. SIM services.
-	14. Back.
+	
 
 	""";
 	System.out.println(MENU);
@@ -47,15 +46,22 @@ public class Nokia3310Second{
 	8. Options.
 	9. Speed dials.
 	10. Voice tags.
-	11. Back.
+	11: Back.
 	
 	""";
 	System.out.println(PhoneBook);
 	int Eight = input.nextInt();
 	
 	switch (Eight) {
+	case 1: System.out.println("Search");break;
+	case 2: System.out.println("Services Nos");break;
+	case 3: System.out.println("Add name");break;
+	case 4: System.out.println("Erase");break;
+	case 5: System.out.println("Edit");break;
+	case 6: System.out.println("Assign tone");break;
+	case 7:	System.out.println("Send b'card");break;
 	
-	case 8: System.out.println("Options");
+	case 8: System.out.println("Options"); 
 
 	String Options = """
 	1. Type of view.
@@ -63,12 +69,24 @@ public class Nokia3310Second{
 	3. Back.
 	
 	""";
+	
 	System.out.println(Options);
-
+	Eight = input.nextInt();
+	switch (Eight){
+	
+	case 1:	System.out.println("Type of view");break;
+	case 2:	System.out.println("Memory status");break;
+	case 3:	System.out.println("Back");break;
+}
+	
+	
+	case 9:	System.out.println("Speed dials");break;
+	case 10: System.out.println("Voice tags");break;
+	default: System.out.println("invalid number");break;
 }
 }break;
 
-	case 2: System.out.println("Messages"); {
+	case 2: System.out.println("Messages"); 
 
 	String Messages = """
 	1. Write massages.
@@ -89,49 +107,205 @@ public class Nokia3310Second{
 	int Seven = input.nextInt();
 
 	switch (Seven) {
+	case 1: {
+		  boolean messaging = true;
+	      	  while (messaging) {
+		System.out.println(""" 
+			Write massages 
+			
+			0. Back
+				""");
+		int chatBack = input.nextInt();
+		switch (chatBack) {
+		   case 0 :messaging = false; break;
 
-	case 7: System.out.println("Message settings");
+		   default : System.out.println("Invalid selection");
+			}
+		   }
+	}break;
 
-	String MessageSettings = """
+	case 2: {
+		  boolean Inboxing = true;
+	      	  while (Inboxing) {
+		System.out.println(""" 
+			Inbox 
+			
+			0. Back
+				""");
+		int chatBack = input.nextInt();
+		switch (chatBack) {
+		   case 0 :Inboxing = false; break;
 
-	1. Set 1.
-	2. Common.
-	3. Back.
+		   default : System.out.println("Invalid selection");
+			}
+		   }
+	}break;
+
+	case 3: {
+		  boolean Outboxing = true;
+	      	  while (Outboxing) {
+		System.out.println(""" 
+			Outbox 
+			
+			press 0. Back
+				""");
+		int chatBack = input.nextInt();
+		switch (chatBack) {
+		   case 0 :Outboxing = false; break;
+
+		   default : System.out.println("Invalid selection");
+			}
+		   }
+	}break;
+
+	case 4: {
+		  boolean Picture = true;
+	      	  while (Picture) {
+		System.out.println(""" 
+			Picture massages 
+			
+			press 0. Back
+				""");
+		int chatBack = input.nextInt();
+		switch (chatBack) {
+		   case 0 :Picture = false; break;
+
+		   default : System.out.println("Invalid selection");
+			}
+		   }
+	}break;
+
+	case 5: {
+		  boolean Templating = true;
+	      	  while (Templating) {
+		System.out.println(""" 
+			Templates 
+			
+			press 0. Back
+				""");
+		int chatBack = input.nextInt();
+		switch (chatBack) {
+		   case 0 :Templating = false; break;
+
+		   default : System.out.println("Invalid selection");
+			}
+		   }
+	}break;
+
+	case 6: {
+		  boolean Smileying = true;
+	      	  while (Smileying) {
+		System.out.println(""" 
+			Smileys 
+			
+			press 0. Back
+				""");
+		int chatBack = input.nextInt();
+		switch (chatBack) {
+		   case 0 :Smileying = false; break;
+
+		   default : System.out.println("Invalid selection");
+			}
+		   }
+	}break;
+
+	case 7: System.out.println("Setting"); {
+		  boolean Setting = true;
+	      	  while (Setting) {
+		System.out.println(""" 
+			Message settings
+			
+			1. Set 1.
+			2. Common.
+			3. Back.
 	
-	""";
+			press 0. Back
+				""");
+		int chatBack = input.nextInt();
+		switch (chatBack) {
+		   case 0 :Setting = false; break;
+
+		   default : System.out.println("Invalid selection");
+			}
+	}	   }
 	
-	System.out.println(MessageSettings);
+ 	System.out.println(Setting);break;
+
 	int One = input.nextInt();
 
 	switch (One) {
+
+		case 1: {
+			   boolean Setting  = true;
+	      	 	   while (Setting ) {
+		     System.out.println(""" 
+			Set 1
+			
+			1. Message center number.
+			2. Messages sent as.
+			3. Message vaildity.
 	
-	case 1: System.out.println("Set 1");
-
-	String Set1 = """
-
-	1. Message center number.
-	2. Messages sent as.
-	3. Message vaildity.
-	4. Back.
 	
-	""";
-	System.out.println(Set1);break;
+			press 0. Back
+				""");
+		int setBack = input.nextInt();
+		switch (setBack) {
+		   case 0 :Setting  = false; break;
+
+		   default : System.out.println("Invalid selection");
+			}
+		   }
+	}break;
+
 	
-	case 2: System.out.println("Common");
+	//case 1: System.out.println("Set 1");
 
-	String Common = """
+	//String Set1 = """
 
-	1. Delivery reports.
-	2. Reply via same centre.
-	3. character support.
-	5. Back.
-	""";
-	System.out.println(Common);break;
+	//1. Message center number.
+	//2. Messages sent as.
+	//3. Message vaildity.
+	//4. Back.
+	
+	//""";
+	//System.out.println(Set1);break;
+	
+	//case 2: System.out.println("Common");
+
+	//String Common = """
+
+	//1. Delivery reports.
+	//2. Reply via same centre.
+	//3. character support.
+	//5. Back.
+	//""";
+	//System.out.println(Common);break;
+	case 8:	System.out.println("Info service");break;
+	case 9:	System.out.println("Voice mailbox number");break;
+	case 10: System.out.println("Service command editor");break;
+
+
+
 }
-}
-
 }break;
-	case 3: System.out.println("Chat");break;
+
+	case 3: {
+		  boolean chatting = true;
+	      	  while (chatting) {
+		System.out.println(""" 
+			View your chats here 
+			
+			0. Back
+				""");
+		int chatBack = input.nextInt();
+		switch (chatBack) {
+		   case 0 :chatting = false; break;
+
+		   default : System.out.println("Invalid selection");
+			}
+		   }
+	}break;
+
 	case 4: System.out.println("Call register");
 
 	String CallRegister = """
@@ -144,13 +318,85 @@ public class Nokia3310Second{
 	7. Call cost settings.
 	8. Prepaid credit.
 	9. Back.
-	
 	""";
 	
 	System.out.println(CallRegister);
+	
 	int Five = input.nextInt();
 
 	switch (Five) {
+		case 1: {
+		  boolean callings = true;
+	      	  while (callings) {
+		System.out.println(""" 
+			View your Missed calls here 
+			
+			0. Back
+				""");
+		int callBack = input.nextInt();
+		switch (callBack) {
+		   case 0 :callings = false; break;
+
+		   default : System.out.println("Invalid selection");
+			}
+		   }
+	}break;
+
+	case 2: {
+		  boolean Receiving = true;
+	      	  while (Receiving) {
+		System.out.println(""" 
+			View your Received calls here 
+			
+			0. Back
+				""");
+		int callBack = input.nextInt();
+		switch (callBack) {
+		   case 0 :Receiving = false; break;
+
+		   default : System.out.println("Invalid selection");
+			}
+		   }
+	}break;
+
+
+
+
+
+	case 3:  {
+		  boolean Dialling = true;
+	      	  while (Dialling) {
+		System.out.println(""" 
+			Dialled numbers
+			
+			0. Back
+				""");
+		int callBack = input.nextInt();
+		switch (callBack) {
+		   case 0 :Dialling = false; break;
+
+		   default : System.out.println("Invalid selection");
+			}
+		   }
+	}break;
+
+	case 4:   {
+		  boolean recent = true;
+	      	  while (recent) {
+		System.out.println(""" 
+			Erase recent call lists
+			
+			0. Back
+				""");
+		int callBack = input.nextInt();
+		switch (callBack) {
+		   case 0 :recent = false; break;
+
+		   default : System.out.println("Invalid selection");
+			}
+		   }
+	}break;
+
 
 	case 5: System.out.println("Show call duration");
 	String ShowCallDuration = """
@@ -187,6 +433,8 @@ public class Nokia3310Second{
 	
 	""";
 	System.out.println(CallCostSettings);break;
+	case 8:	System.out.println("Prepaid credit");break;
+	case 9:	System.out.println("Back");break;
 
 }break;
 	case 5: System.out.println("Tones"); {
@@ -204,7 +452,22 @@ public class Nokia3310Second{
 	10. Back.
 	""";
 	System.out.println(Tones);
+	int Four = input.nextInt();
 
+	switch (Four) {
+
+	case 1: System.out.println("Ringing tone");break;
+	case 2: System.out.println("Ringing volume");break;
+	case 3: System.out.println("Incoming call alert");break;
+	case 4: System.out.println("Composer");break;
+	case 5: System.out.println("Message alert tone");break;
+	case 6: System.out.println("Keypad tones");break;
+	case 7: System.out.println("Warning and game tones");break;
+	case 8: System.out.println("Vibrating alert");break;
+	case 9: System.out.println("Screen saver");break;
+	case 10: System.out.println("Back");break;
+
+}
 }break;
 	case 6: System.out.println("Settings"); {
 	
@@ -213,7 +476,7 @@ public class Nokia3310Second{
 	2. Phone settings.
 	3. Security settings.
 	4. Restore factory settings.
-
+	5. Back.
 	""";
 	System.out.println(Settings);
 	int Six = input.nextInt();
@@ -259,7 +522,8 @@ public class Nokia3310Second{
 	
 	""";
 	System.out.println(SecuritySettings);break;
-
+	case 4: System.out.println("Restore factory settings");
+	case 5:	System.out.println("Back");break;
 }
 }break;
 	case 7: System.out.println("Call divert");break;
@@ -280,14 +544,31 @@ public class Nokia3310Second{
 	
 	""";
 	System.out.println(Clocks);
+	int Eleven = input.nextInt();
 
+	switch (Eleven) {
+
+	case 1: System.out.println("Alarm clock");break;
+	case 2: System.out.println("Clock settings");break;
+	case 3: System.out.println("Date setting");break;
+	case 4: System.out.println("Stopwatch");break;
+	case 5: System.out.println("Countdown timer");break;
+	case 6: System.out.println("Auto update of date and time");break;
+	
+
+
+}
 }break;
 	case 12: System.out.println("Profiles");break;
 	case 13: System.out.println("SIM services");break;
-}
+	default: System.out.println("invalid number");break;
+
 
 }
 
 }
 
+
 }
+}
+
