@@ -1,3 +1,37 @@
+<<<<<<< HEAD
+public class Triangle{
+	public static void main(String[] args){
+
+
+	for(int count = 1; count <= 10; count++) {
+
+	
+		for(int count2 = 1; count2 <=  count; count2++) {	
+
+		System.out.print("* ");
+		} 
+	
+		for(int count3 = 10 ; count3 <= 1; count3--){
+		
+		System.out.print(" ");
+
+		}
+
+		for(int count4 = 10; count4 <= count; count4--) {
+		System.out.println("*");
+		}
+
+		System.out.println();
+	
+
+}
+	
+
+
+
+	}
+
+=======
 public class Triangle{
 	public static void main(String[] args){
 
@@ -66,4 +100,5 @@ public class Triangle{
 
 }
 
+>>>>>>> 837ee5718c9f8a11a271a3153586cf134d4e4504
 }
