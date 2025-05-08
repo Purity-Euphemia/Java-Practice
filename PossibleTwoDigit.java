@@ -3,7 +3,7 @@ public class PossibleTwoDigit{
 		int count = 1;
 		int counter = 1;
 
-	for (count = 1; count <= 9; count++) {
+	for (count = 1; count <= 10; count++) {
 
 		for (counter = count; counter <= 10; counter++) {
 	

@@ -13,7 +13,7 @@ public class ReadingNumber{
 	while (sum > number ) {
 
 	System.out.print("Enter a number: ");
-	int number = input.nextInt();
+	number = input.nextInt();
 	
 	sum = sum + number;
 
