@@ -43,6 +43,26 @@ return "Wrong number";
 
 }
 
+public static String DisplayAge(int years) {
+	
+	int month = years * 12;
+	int days = month * 365;
+	int minutes = days * 1440;
+	int seconds = minutes * 60;
+
+return "Years:" + years + "  " + "month:" +  month + "  " + "days:" + days + "  " + "minutes:" + minutes + "  " + "seconds:" + seconds;
+}
+
+public static int DisplayDogAge(String name, int humanYears) {
+	int multiple = humanYears * 7;
+	return multiple;
+
+}
+
+
+	
+
+
 
 
 }

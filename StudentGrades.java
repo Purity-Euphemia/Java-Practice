@@ -1,74 +1,32 @@
-<<<<<<< HEAD
 import java.util.Scanner;
-public class MileageGas{
+public class StudentGrade{
 	public static void main(String[] args) {
 	Scanner input = new Scanner(System.in);
 	
-	int division = 0;
+	int total = 0;
 	int count;
 
-	while( count != 0) {
+	System.out.print("Enter a grade or press -1 to quit: ");
+	int number = input.nextInt();
 
-	System.out.print("THe mles driven: ");
-	int number1 = input.nextInt();
+	while(number != -1) {
+	total = total + number;
+	count = count + 1;
 
-	System.out.print("The gallon used: ");
-	int number2 = input.nextInt();
+	System.out.print("Enter a grade or press -1 to quit: ");
+	number = input.nextInt();
 
-	division = number1 / number2;
+}	
+	if (number != 0) {
+	double average = (double) total / count;
 
-	System.out.printf("The miles per gallon %.2f", division);
-	
-	System.out.print("Enter a number to keep on going OR -1 to quit");
-	int count = input.nextInt();
-	count++;
-	division++;
+	System.out.printf("The total of %d numbers entered is %d%n ", count, total);
+	System.out.printf("the average is %.2f%n", average)
 
-
-
-
-}
+}	else {
+	System.out.println("No numbers were entered");
 
 
 }
-
-
-
-=======
-import java.util.Scanner;
-public class MileageGas{
-	public static void main(String[] args) {
-	Scanner input = new Scanner(System.in);
-	
-	int division = 0;
-	int count;
-
-	while( count != 0) {
-
-	System.out.print("THe mles driven: ");
-	int number1 = input.nextInt();
-
-	System.out.print("The gallon used: ");
-	int number2 = input.nextInt();
-
-	division = number1 / number2;
-
-	System.out.printf("The miles per gallon %.2f", division);
-	
-	System.out.print("Enter a number to keep on going OR -1 to quit");
-	int count = input.nextInt();
-	count++;
-	division++;
-
-
-
-
 }
-
-
-}
-
-
-
->>>>>>> 837ee5718c9f8a11a271a3153586cf134d4e4504
 }
