@@ -1,11 +1,11 @@
 	import java.util.Scanner;
 	public class  ArrayKata{
+		
 	     public static void main(String[] args){
 		Scanner input = new Scanner(System.in);
 	
 		System.out.print("Enter number of array element: ");
 		int arrayNumber = input.nextInt();
-		
 		int [] value = new int [arrayNumber];
 		for(int count = 0; count < value.length; count++) {
 		
